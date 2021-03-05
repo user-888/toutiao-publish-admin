@@ -1,0 +1,12 @@
+1、后端但会的数据都是字符串
+我们可以通过调式工具中的network -> response 网络面板看到原始的返回数据
+
+2、我们在项目中使用axios发出请求
+axios为了方便，他会在内部把原始的json格式字符串转为javascript对象给你使用
+
+解决思路：
+axios会在内部使用json.parse 把后端返回的数据转为javascript数据对象。
+
+所以解决思路就是不要让axios使用JSON.parse，而是使用json-biginit来转换处理
+
+axios

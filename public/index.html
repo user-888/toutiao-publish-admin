@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2376121_zkvc7a1pah.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!--引入百度地图的jssdk，这里需要使用你在百度地图开发者平台申请的 ak-->
+    <!-- 百度地图脚本SDK会全局暴露一个数据：Bmap -->
+    <!-- 注意：在项目代码中访问第三方全局数据，必须加window前缀 -->
+<script src="http://api.map.baidu.com/api?v=2.0&ak=63DV3kqjQQHm6Ru1E0WCQi4PYG6tutVr"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- 单页面的入口节点，最终所有的组件都会渲染到这里 -->
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
